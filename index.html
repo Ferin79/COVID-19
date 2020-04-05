@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | COVID-19</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="./css/materialize.min.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar section start -->
+    <section>
+      <nav class="nav">
+        <div class="nav-wrapper z-depth-3">
+          <a href="/index.html" class="brand-logo nav-logo-text center"
+            >COVID-19</a
+          >
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons black-text">menu</i></a
+          >
+          <ul class="hide-on-med-and-down nav-desk-link">
+            <li><a href="symptoms.html">symptoms</a></li>
+            <li><a href="precautons.html">precautions</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="map.html">Covid-Map</a></li>
+          </ul>
+          <a href="/index.html" class="right nav-logo-right">
+            <img
+              class="responsive-img"
+              src="./images/corona.png"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </a>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <ul class="center hide-on-med-and-down">
+          <li><a href="symptoms.html">symptoms</a></li>
+          <li><a href="precautons.html">precautions</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="map.html">Covid-Map</a></li>
+        </ul>
+      </ul>
+    </section>
+    <!-- navbar section end -->
+
+    <!-- landing page section start -->
+    <section class="landing-page-wrapper">
+      <div class="img-sec-1">
+        <img src="./images/corona.png" alt="" />
+      </div>
+      <div class="summary-wrapper">
+        <div>
+          <h1>
+            COVID-19
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+            pariatur doloremque temporibus deleniti aut! Sunt, laudantium!
+            Architecto commodi ullam modi quia quis aliquid totam magni, ipsam
+            quae enim numquam! Doloribus nulla rem explicabo dolor ut quis
+            quaerat aspernatur animi dolorem quia, praesentium obcaecati,
+            magnam, cupiditate et commodi eum cumque nostrum!
+          </p>
+        </div>
+        <div>
+          <h3>
+            COVID-19 coronavirus pandemic
+          </h3>
+          <p class="last-update-div">
+            Last updated <span class="last-update-date"></span>
+          </p>
+        </div>
+        <div>
+          <h3>coronavirus cases</h3>
+          <h3 class="total-cases counter"></h3>
+        </div>
+        <div>
+          <h4>Deaths</h4>
+          <h3 class="total-death counter"></h3>
+        </div>
+        <div>
+          <h4>Recovered</h4>
+          <h3 class="total-recovered counter"></h3>
+        </div>
+      </div>
+      <div class="img-sec-2">
+        <img src="./images/corona.png" alt="" />
+      </div>
+    </section>
+    <!-- landing page section end -->
+  </body>
+  <script src="./js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script src="./js/materialize.min.js"></script>
+  <script src="./js/index.js"></script>
+</html>
