@@ -8,7 +8,6 @@ const fetchIndexDetails = async () => {
   const date = new Date();
   $(".last-update-date").html(date);
   const response = await fetch("https://corona.lmao.ninja/all");
-  const url = "https://api.thevirustracker.com/free-api?global=stats";
   const responseData = await response.json();
   console.log(responseData);
   $(".total-cases").html(responseData.cases);
