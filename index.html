@@ -8,47 +8,47 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="./css/materialize.min.css" rel="stylesheet" />
     <link href="./css/index.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar section start -->
-    <section>
-      <nav class="nav">
-        <div class="nav-wrapper z-depth-3">
-          <a href="/index.html" class="brand-logo nav-logo-text center"
-            >COVID-19</a
-          >
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-            ><i class="material-icons black-text">menu</i></a
-          >
-          <ul class="hide-on-med-and-down nav-desk-link">
-            <li><a href="symptoms.html">symptoms</a></li>
-            <li><a href="precautons.html">precautions</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="map.html">Covid-Map</a></li>
-          </ul>
-          <a href="/index.html" class="right nav-logo-right">
-            <img
-              class="responsive-img"
-              src="./images/corona.png"
-              height="100"
-              width="100"
-              alt=""
-            />
-          </a>
-        </div>
-      </nav>
-
-      <ul class="sidenav" id="mobile-demo">
-        <ul class="center hide-on-med-and-down">
+    <nav class="nav">
+      <div class="nav-wrapper z-depth-3">
+        <a href="/index.html" class="brand-logo nav-logo-text center"
+          >COVID-19</a
+        >
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons black-text">menu</i></a
+        >
+        <ul class="hide-on-med-and-down nav-desk-link">
           <li><a href="symptoms.html">symptoms</a></li>
           <li><a href="precautons.html">precautions</a></li>
           <li><a href="about.html">about</a></li>
           <li><a href="map.html">Covid-Map</a></li>
         </ul>
-      </ul>
-    </section>
+        <a href="/index.html" class="right nav-logo-right">
+          <img
+            class="responsive-img"
+            src="./images/corona.png"
+            height="100"
+            width="100"
+            alt=""
+          />
+        </a>
+      </div>
+    </nav>
+
+    <ul class="sidenav nav-desk-link" id="mobile-demo">
+      <li><a href="symptoms.html">symptoms</a></li>
+      <li><a href="precautons.html">precautions</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="map.html">Covid-Map</a></li>
+    </ul>
     <!-- navbar section end -->
 
     <!-- landing page section start -->
@@ -96,6 +96,85 @@
       </div>
     </section>
     <!-- landing page section end -->
+
+    <!-- section 2 start -->
+    <section class="section2-wrapper z-depth-5">
+      <h4 style="padding-top: 50px;">COVID-19 Table</h4>
+      <div class="sec2-main-wrapper">
+        <div class="card-wrapper">
+          <div class="card-header-wrapper">
+            <h5>Active Cases</h5>
+          </div>
+          <div class="card-content-wrapper">
+            <div>
+              <h4 class="active-cases counter"></h4>
+              <p>Currently Infected Person</p>
+            </div>
+            <div>
+              <h4 class="critical-cases counter"></h4>
+              <p>Serious or Critical</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card-header-wrapper">
+            <h5>Statistics</h5>
+          </div>
+          <div class="card-content-wrapper">
+            <div>
+              <h4 class="casePerMillion counter"></h4>
+              <p>Cases Per Million</p>
+            </div>
+
+            <div>
+              <h4 class="deathPerMillion counter"></h4>
+              <p>Deaths Per Million</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card-header-wrapper">
+            <h5>Death Cases</h5>
+          </div>
+          <div class="card-content-wrapper">
+            <div>
+              <h4 class="todaycases counter"></h4>
+              <p>Today Cases</p>
+            </div>
+            <div>
+              <h4 class="todayDeath counter"></h4>
+              <p>Total Death Today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 ends -->
+
+    <!-- footer start -->
+
+    <footer>
+      <div class="footer-nav">
+        <p><a href="">symptoms</a></p>
+        <p><a href="">Covid-Map</a></p>
+        <p><a class="footer-header" href="">COVID-19</a></p>
+        <p><a href="">precautions</a></p>
+        <p><a href="">about</a></p>
+      </div>
+      <hr class="footer-hr" />
+      <p class="white-text" style="padding: 20px;">Follow Us</p>
+      <div class="social-wrapper">
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-instagram fa-2x"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+        <i class="fa fa-youtube fa-2x"></i>
+        <i class="fa fa-linkedin fa-2x"></i>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
   </body>
   <script src="./js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
