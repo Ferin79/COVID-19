@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Symptoms | COVID-19</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="../css/materialize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/Chart.min.css" />
+    <link href="../css/tracker.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar section start -->
+    <nav class="nav">
+      <div class="nav-wrapper z-depth-3">
+        <a href="../index.html" class="brand-logo nav-logo-text center"
+          >COVID-19</a
+        >
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons black-text">menu</i></a
+        >
+        <ul class="hide-on-med-and-down nav-desk-link">
+          <li><a href="./map.html">Covid-Map</a></li>
+          <li class="active"><a href="./tracker.html">Tracker</a></li>
+          <li><a href="./symptoms.html">symptoms</a></li>
+          <li><a href="./precaution.html">precautions</a></li>
+          <li><a href="./about.html">about</a></li>
+        </ul>
+        <a href="../index.html" class="right nav-logo-right">
+          <img
+            class="responsive-img"
+            src="../images/corona.png"
+            height="100"
+            width="100"
+            alt=""
+          />
+        </a>
+      </div>
+    </nav>
+
+    <ul class="sidenav nav-desk-link" id="mobile-demo">
+      <li><a href="map.html">Covid-Map</a></li>
+      <li class="active"><a href="./tracker.html">Tracker</a></li>
+      <li><a href="symptoms.html">symptoms</a></li>
+      <li><a href="precautons.html">precautions</a></li>
+      <li><a href="./about.html">about</a></li>
+    </ul>
+    <!-- navbar section end -->
+    <div class="card-main-wrapper">
+      <div class="card-section-wrapper infected">
+        <p>Infected</p>
+        <h3 class="infected-count counter"></h3>
+        <p class="date-auto center"></p>
+      </div>
+      <div class="card-section-wrapper recover">
+        <p>Recovered</p>
+        <h3 class="recover-count counter"></h3>
+        <p class="date-auto center"></p>
+      </div>
+      <div class="card-section-wrapper death">
+        <p>Deaths</p>
+        <h3 class="deaths-count counter"></h3>
+        <p class="date-auto center"></p>
+      </div>
+    </div>
+
+    <div id="preloader">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="chart-container"
+      style="position: relative; height: 500; width: 500;"
+    >
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <a
+      class="btn-floating btn-large waves-effect waves-light blue floating-wrapper"
+      ><i class="material-icons">arrow_upward </i></a
+    >
+
+    <footer>
+      <div class="footer-nav">
+        <p><a href="./map.html">Covid-Map</a></p>
+        <p><a href="./symptoms.html">symptoms</a></p>
+        <p><a class="footer-header" href="../index.html">COVID-19</a></p>
+        <p><a href="">precautions</a></p>
+        <p><a href="about.html">about</a></p>
+      </div>
+      <hr class="footer-hr" />
+      <p class="white-text" style="padding: 20px;">Follow Us</p>
+      <div class="social-wrapper">
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-instagram fa-2x"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+        <i class="fa fa-youtube fa-2x"></i>
+        <i class="fa fa-linkedin fa-2x"></i>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+  </body>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script src="../js/Chart.bundle.min.js"></script>
+  <script src="../js/Chart.min.js"></script>
+  <script src="../js/tracker.js"></script>
+</html>
