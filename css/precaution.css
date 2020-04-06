@@ -1,0 +1,147 @@
+:root {
+  --main-color: #ad302e;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav {
+  background-color: white !important;
+}
+.nav-logo-text {
+  color: var(--main-color) !important;
+  font-weight: bold !important;
+  padding-left: 50px !important;
+}
+.nav-desk-link li a,
+.nav-mob-link li a {
+  color: black !important;
+  text-transform: uppercase;
+}
+.main-precaution-wrapper {
+  width: 100%;
+  height: 90vh;
+  background: url("../images/precaution.jpg") #ad302e49;
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+  padding: 100px;
+}
+.main-precaution-wrapper h4 {
+  margin: 20px 0;
+}
+.main-precaution-wrapper p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.section2-wrapper {
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  font-size: 20px;
+  background: url("../images/corona.png");
+  background-size: initial;
+  background-position: 115% 100%;
+  background-repeat: no-repeat;
+}
+.section2-wrapper div {
+  padding: 10px 0;
+}
+.section1-wrapper {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section1-wrapper p {
+  font-size: 20px;
+}
+.section1-wrapper div {
+  margin: 50px 0px;
+}
+footer {
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-nav {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-nav p a {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.footer-header {
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+.footer-hr {
+  width: 80%;
+  margin: auto;
+}
+.social-wrapper {
+  width: 20%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fa {
+  color: white;
+}
+@media (max-width: 789px) {
+  .nav-logo-right {
+    display: none;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-nav p a {
+    font-size: 12px;
+  }
+  .social-wrapper {
+    width: 80%;
+    padding-bottom: 10px;
+  }
+  .main-precaution-wrapper {
+    height: auto;
+    padding: 10px;
+  }
+  .main-precaution-wrapper h4 {
+    margin: 10px 0;
+  }
+  .main-precaution-wrapper p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .section1-wrapper {
+    height: auto;
+  }
+  .section1-wrapper p {
+    font-size: 20px;
+  }
+  .section1-wrapper div {
+    margin: 20px 0px;
+  }
+  .section2-wrapper {
+    height: auto;
+    padding: 10px;
+    background: none;
+  }
+  .section2-wrapper div {
+    padding: 10px 0;
+  }
+}
