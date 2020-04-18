@@ -7,7 +7,7 @@ $(document).ready(function () {
 const fetchIndexDetails = async () => {
   const date = new Date();
   $(".last-update-date").html(date);
-  const response = await fetch("https://corona.lmao.ninja/all");
+  const response = await fetch("https://corona.lmao.ninja/v2/all");
   const responseData = await response.json();
   console.log(responseData);
   $(".total-cases").html(responseData.cases);
