@@ -9,7 +9,7 @@ $(document).ready(async function () {
 });
 
 const fetchFirstData = async () => {
-  const response = await fetch("https://corona.lmao.ninja/all");
+  const response = await fetch("https://corona.lmao.ninja/v2/all");
   const responseData = await response.json();
   const date = new Date(responseData.updated);
   $(".date-auto").html(date.toUTCString());
