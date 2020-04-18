@@ -10,7 +10,7 @@ $(document).ready(function () {
 });
 
 const fetchTableData = async () => {
-  const response = await fetch("https://corona.lmao.ninja/countries");
+  const response = await fetch("https://corona.lmao.ninja/v2/countries");
   const responseData = await response.json();
   console.log(responseData);
   $("#data-entry-table").empty();
