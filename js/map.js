@@ -53,7 +53,7 @@ const handleHoverMap = () => {
       $(this).attr("class", "enabled heyo");
       $description.addClass("active");
       const response = await fetch(
-        `https://corona.lmao.ninja/countries/${$(this).attr("id")}`
+        `https://corona.lmao.ninja/v2/countries/${$(this).attr("id")}`
       );
       const responseData = await response.json();
       console.log(responseData);
